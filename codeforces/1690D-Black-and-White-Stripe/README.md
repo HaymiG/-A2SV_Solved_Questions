@@ -1,6 +1,6 @@
 # 1690D-Black-and-White-Stripe
 
-**Problem:** [1690D-Black-and-White-Stripe](https://codeforces.com/contest/1690/problem/D)
+**Problem:** [1690D-Black-and-White-Stripe](https://codeforces.com/problemset/problem/1690/D)
 
 **time limit per test:** 2 seconds
 
