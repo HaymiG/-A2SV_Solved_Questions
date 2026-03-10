@@ -2,16 +2,16 @@ class Solution:
     def minOperations(self, logs: List[str]) -> int:
         stack = []
         for char in logs:
-            if char != "../" :
-                if char != "./": 
-                    stack.append(char)
-            elif char == "./":
+            if char == "./":
                 continue
-            else:
+            if char == "../":
                 if stack:
-                    stack.pop
-        n = len(stack)
-        return n - 1 if n > 0 else 0
+                    stack.pop()
+            elif char != "./":
+                stack.append(char)
+                
+      
+        return len(stack)
 
 
 
