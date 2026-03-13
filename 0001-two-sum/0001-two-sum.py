@@ -1,8 +1,10 @@
 class Solution(object):
     def twoSum(self, nums, target):
-        nums_hash = {}
-        for i in range(len(nums)):   
-            complement = target - nums[i]
-            if complement in nums_hash:
-                return [nums_hash[complement], i]
-            nums_hash[nums[i]] = i
+        hashmap = defaultdict(int)
+        for i in range(len(nums)):
+            reminder = target - nums[i]
+            if reminder in hashmap:
+                return [hashmap[reminder] , i]
+            hashmap[nums[i]] = i
+            
+
